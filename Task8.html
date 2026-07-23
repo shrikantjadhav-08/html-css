@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+
+.instagram{
+    width:300px;
+    height:300px;
+    border-radius:70px;
+    background:linear-gradient(
+        135deg,
+        #405de6,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d,
+        #f77737,
+        #fcaf45
+    );
+    position:relative;
+}
+.camera{
+    width:180px;
+    height:180px;
+    border:15px solid white;
+    border-radius:50px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.lens{
+    width:80px;
+    height:80px;
+    border:15px solid white;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.dot{
+    width:25px;
+    height:25px;
+    background:white;
+    border-radius:50%;
+    position:absolute;
+    top:35px;
+    right:35px;
+}
+</style>
+</head>
+<body>
+<div class="instagram">
+    <div class="camera">
+        <div class="lens"></div>
+    </div>
+    <div class="dot"></div>
+</div>
+</body>
+</html>
